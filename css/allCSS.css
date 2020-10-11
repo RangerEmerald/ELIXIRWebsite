@@ -20,7 +20,7 @@ a:hover{
     font-family: sans-serif;
 }
 
-.navbar{
+#navbar{
     padding-top: 0em;
     text-align: right;
     margin: 0em;
@@ -49,7 +49,7 @@ and (max-device-width : 480px) {
     #req{
         font-size: 10px;
     }
-    .navbar{
+    #navbar{
         font-size: 15px;
     }
 }
