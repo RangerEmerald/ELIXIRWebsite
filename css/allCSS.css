@@ -49,4 +49,7 @@ and (max-device-width : 480px) {
     #req{
         font-size: 10px;
     }
+    .navbar{
+        font-size: 15px;
+    }
 }
