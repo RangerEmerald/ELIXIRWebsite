@@ -17,7 +17,7 @@ a:hover{
     font-size: 50px;
     padding-top: 20px;
     padding-bottom: 20px;
-    font-family: sans-serif;
+    font-family: 'PT Sans Narrow', sans-serif;
 }
 
 #navbar{
@@ -31,25 +31,10 @@ a:hover{
 
 #req{
     font-size: 30px;
+    font-family: 'Inconsolata', monospace;
 }
 
 .reqText{
     font-family: monospace;
     color: gray;
-}
-
-/* Smartphones (portrait and landscape) ----------- */
-@media only screen
-and (min-device-width : 320px) 
-and (max-device-width : 480px) {
-/* Styles */
-    #banner{
-        font-size: 20px;
-    }
-    #req{
-        font-size: 10px;
-    }
-    #navbar{
-        font-size: 15px;
-    }
 }
