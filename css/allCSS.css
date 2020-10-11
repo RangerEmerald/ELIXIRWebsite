@@ -10,16 +10,6 @@ a:hover{
     color: greenyellow;
 }
 
-#banner{
-    background-color: aqua;
-    text-align: center;
-    margin: 0em;
-    font-size: 50px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    font-family: 'PT Sans Narrow', sans-serif;
-}
-
 #navbar{
     padding-top: 0em;
     text-align: right;
@@ -37,4 +27,26 @@ a:hover{
 .reqText{
     font-family: monospace;
     color: gray;
+}
+
+#navbar.sticky {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+/* Styles */
+    #banner{
+        font-size: 20px;
+    }
+    #req{
+        font-size: 10px;
+    }
+    #navbar{
+        font-size: 15px;
+    }
 }
