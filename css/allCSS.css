@@ -31,11 +31,9 @@ a:visited{
     font-size: 30px;
     padding-top: 20px;
     padding-bottom: 20px;
-    font-family: sans-serif;
-    word-spacing: 60px;
 }
 
-#id{
+#req{
     font-size: 30px;
     text-decoration-color: red;
 }
