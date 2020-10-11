@@ -10,10 +10,6 @@ a:hover{
     color: greenyellow;
 }
 
-a:visited{
-    color: red;
-}
-
 #banner{
     background-color: aqua;
     text-align: center;
@@ -35,5 +31,9 @@ a:visited{
 
 #req{
     font-size: 30px;
-    text-decoration-color: red;
+}
+
+.reqText{
+    font-family: monospace;
+    color: gray;
 }
