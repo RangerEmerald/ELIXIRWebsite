@@ -37,3 +37,16 @@ a:hover{
     font-family: monospace;
     color: gray;
 }
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+/* Styles */
+    #banner{
+        font-size: 20px;
+    }
+    #req{
+        font-size: 10px;
+    }
+}
