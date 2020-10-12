@@ -8,6 +8,8 @@ a{
 }
 a:hover{
     color: greenyellow;
+    font-size: larger;
+    line-height:18pt;
 }
 
 #navbar{
