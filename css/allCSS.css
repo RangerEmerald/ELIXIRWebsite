@@ -1,5 +1,6 @@
 html, body, main{
     margin: 0em;
+    overflow:auto
 }
 
 a{
@@ -58,7 +59,7 @@ a:hover{
 }
 
 .container{
-    overflow: scroll;
+    overflow: auto;
     height: 100vh;
     scroll-snap-type: y mandatory;
     scroll-snap-stop: always;
