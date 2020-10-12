@@ -8,11 +8,11 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Prompt">
     </head>
     <body>
-        <nav class="navbar"><a href="./home" style="background: white;padding: 20px 20px 20px 20px;">Home</a>&emsp;&emsp;<a href="./team-info">Team Info</a></nav>
+        <nav class="navbar"><a href="./home" style="background: white;padding: 20px 20px 20px 20px;">Home</a>&emsp;&emsp;<a href="./team-info" style="padding: 10px">Team Info</a></nav>
         <div class="container">
             <section class="page1" style="height:100%;background-color: #b9fffc;">
                 <div class="child" id="page1">
-                    <p>The ELIXIR Nitrotype Team</p>
+                    <p id="typingCharac"></p><p id="cursor">|</p>
                 </div>
             </section>
             <section>
@@ -20,4 +20,31 @@
             </section>
         </div>
     </body>
+    <script>
+        function sleep(ms) {
+            return new Promise(resolve => setTimeout(resolve, ms));
+        }
+        const typingCharac = document.getElementById("typingCharac");
+        const cursor = document.getElementById("cursor");
+        const teamCharac = ['T', 'h', 'e', ' ', 'E', 'L', 'I', 'X', 'I', 'R', ' ', 'N', 'i', 't', 'r', 'o', 't', 'y', 'p', 'e', ' ', 'T', 'e', 'a', 'm'];
+        async function typing(){
+            for(var i = 0; i < teamCharac.length; i++){
+                typingCharac.innerHTML += teamCharac[i];
+                await sleep(100);
+            }
+        }
+        async function cursorBlinking(){
+            await typing();
+            while(true){    
+                if(cursor.style.opacity === "0"){
+                    cursor.style.opacity = "1";
+                    await sleep(1000);
+                } else {
+                    cursor.style.opacity = "0";
+                    await sleep(1000);
+                }
+            }
+        }
+        cursorBlinking();
+    </script>
 </html>
