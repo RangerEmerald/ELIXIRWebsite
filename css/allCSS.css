@@ -11,6 +11,8 @@ a:hover{
 }
 
 #navbar{
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
     padding-top: 0em;
     text-align: right;
     margin: 0em;
@@ -19,7 +21,8 @@ a:hover{
     font-family: 'Courier New','Helvetica Neue', sans-serif;
     font-size: 1.5em;
     overflow: hidden;
-    background-color: white;
+    background-color: #150485;
+    color: #c62a88;
 }
 
 #req{
@@ -30,12 +33,6 @@ a:hover{
 .reqText{
     font-family: monospace;
     color: gray;
-}
-
-#navbar.sticky {
-    position: -webkit-sticky; /* Safari */
-    position: sticky;
-    top: 0;
 }
 
 .page1{
