@@ -1,6 +1,6 @@
 html, body, main{
     margin: 0em;
-    overflow:auto
+    overflow: auto;
 }
 
 a{
@@ -20,7 +20,7 @@ a:hover{
     margin: 0em;
     padding-top: 20px;
     padding-bottom: 20px;
-    font-family: 'Courier New','Helvetica Neue', sans-serif;
+    font-family: sans-serif;
     font-size: 1.5em;
     background-color: #2B7A78;
     color: #FEFFFF;
@@ -32,7 +32,7 @@ a:hover{
 }
 
 .reqText{
-    font-family: monospace;
+    font-family: 'Roboto', sans-serif;
     color: darkgray;
 }
 
@@ -42,8 +42,8 @@ a:hover{
     text-align: center, justify;
 }
 
-#home{
-    font-family: 'Courier New','Helvetica Neue', sans-serif;
+#page1{
+    font-family: 'Roboto', sans-serif;
     font-size: 1.2em;
     display: flex;
     justify-content: center;
