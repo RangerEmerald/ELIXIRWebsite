@@ -1,6 +1,9 @@
 html, body, main{
     margin: 0em;
     overflow: auto;
+    width:100%;
+    overflow-x:hidden;
+    overflow-y:hidden;
 }
 
 a{
@@ -11,50 +14,6 @@ a:hover{
     color: greenyellow;
     font-size: larger;
     line-height:18pt;
-}
-
-.navbar{
-    position: -webkit-sticky; /* Safari */
-    position: sticky;
-    text-align: right;
-    margin: 0em;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    font-family: sans-serif;
-    font-size: 2vw;
-    background-color: #2B7A78;
-    color: #FEFFFF;
-}
-
-#req{
-    font-size: 1.5vw;
-    font-family: 'Inconsolata', monospace;
-}
-
-.reqText{
-    font-family: 'Roboto', sans-serif;
-    color: darkgray;
-}
-
-.page1{
-    height: 100%;
-    text-align: center, justify;
-}
-
-#page1{
-    font-family: 'Roboto', sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
-#typingCharac, #cursor{
-    color: #FEFFFF;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 900;
-    font-size:15vw;
-    text-align: center;
 }
 
 .child{
@@ -70,15 +29,59 @@ a:hover{
     scroll-snap-type: y mandatory;
     scroll-snap-stop: always;
 }
-/* 
-@media (min-width : 320px) {
-    #req{
-        font-size: 10px;
-    }
-    .page1{
-        font-size: 0.5em;
-    }
-    #navbar{
-        font-size: 0.8em;
-    }
-} */
+
+.pageHeader{
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    font-size: 5vw;
+    margin-top: 0px;
+}
+
+.navbar{
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    text-align: right;
+    margin: 0em;
+    padding-top: 1.5vh;
+    padding-bottom: 1.5vh;
+    font-family: sans-serif;
+    font-size: 1.5vw;
+    background-color: #2B7A78;
+    color: #FEFFFF;
+}
+
+.navbarBox{
+    padding: 4vh 2vw 1.5vh 2vw;
+    background-color: #17252A;
+}
+
+.reqText{
+    font-family: 'Roboto', sans-serif;
+    color: darkgray;
+}
+
+#req{
+    font-size: 2.5vh;
+    font-family: 'Inconsolata', monospace;
+}
+
+#homepage{
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#quotePage{
+    font-size: 2.5vh;
+    text-align: center;
+}
+
+#typingCharac, #cursor{
+    color: #FEFFFF;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 26vh;
+    text-align: center;
+}
