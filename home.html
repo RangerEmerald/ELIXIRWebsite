@@ -5,18 +5,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
         <title>Nitrotype ELIXIR Team Official Website</title>
         <link href="./css/allCSS.css" rel="stylesheet" type="text/css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Prompt">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:900">
     </head>
     <body>
         <nav class="navbar"><a href="./home" style="background-color: #17252A;padding: 20px 20px 20px 20px;">Home</a>&emsp;&emsp;<a href="./team-info" style="padding-right: 20px;">Team Info</a></nav>
         <div class="container">
             <section class="page1" style="height:100%;background-color: #3AAFA9;">
-                <div class="child" id="page1">
-                    <p id="typingCharac"></p><p id="cursor">|</p>
+                <div class="child" id="home">
+                    <p><span id="typingCharac"></span><span id="cursor">|</span></p>
                 </div>
-            </section>
-            <section>
-
             </section>
         </div>
     </body>
@@ -26,7 +23,7 @@
         }
         const typingCharac = document.getElementById("typingCharac");
         const cursor = document.getElementById("cursor");
-        const teamCharac = ['T', 'h', 'e', ' ', 'E', 'L', 'I', 'X', 'I', 'R', ' ', 'N', 'i', 't', 'r', 'o', 't', 'y', 'p', 'e', ' ', 'T', 'e', 'a', 'm'];
+        const teamCharac = ['E', 'L', 'I', 'X', 'I', 'R', ' ', 'N', 'i', 't', 'r', 'o', 't', 'y', 'p', 'e', ' ', 'T', 'e', 'a', 'm'];
         async function typing(){
             for(var i = 0; i < teamCharac.length; i++){
                 typingCharac.innerHTML += teamCharac[i];
@@ -35,6 +32,7 @@
         }
         async function cursorBlinking(){
             await typing();
+            await sleep(1000);
             while(true){    
                 if(cursor.style.opacity === "0"){
                     cursor.style.opacity = "1";
