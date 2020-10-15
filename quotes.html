@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-        <title>Nitrotype ELIXIR Team Official Website / Team Info</title>
+        <title>Nitrotype ELIXIR Team Official Website Quotes</title>
         <link href="./css/allCSS.css" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:800">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,8 +13,19 @@
         <div class="container">
             <section id="quotePage" style="height:100%;background-color: #DEF2F1;">
                 <h1 class="pageHeader" style="font-size: 5vh;">Daily Quote</h1>
-                <h2>QOTD October 14: “A man who has committed a mistake and doesn’t correct it is committing another mistake.” – Confucius</h2><!--Each day change this to the same one as the one in the discord, change the text inside using the same format-->
-            </section>
+                <h2 id="qotd">QOTD October 14: “A man who has committed a mistake and doesn’t correct it is committing another mistake.” – Confucius</h2>
         </div>
     </body>
+    <script>
+        const qotd = document.getElementById('qotd');
+        let arrayOfQuotes = [{"date":15,"quote":`QOTD October 15: "There is always a step small enough from where we are to get us to where we want to be. If we take that small step, there’s always another we can take, and eventually, a goal thought to be too far to reach becomes achievable.” – Ellen Langer`},{"date":16,"quote":`QOTD October 16: "Never limit yourself because of others’ limited imagination; never limit others because of your own limited imagination." - Mae Jemison`},{"date":17,"quote":`QOTD October 17: “Challenges are what make life interesting. Overcoming them is what makes life meaningful.” – Joshua J. Marine`},{"date":18,"quote":`QOTD October 18: “The greatest mistake you can make in life is to be continually fearing you will make a mistake.” – Elbert Hubbard`}];
+        let date = new Date();
+        let today = date.getDate();
+        for(var i = 0; i < arrayOfQuotes.length; i++){
+            if(today === arrayOfQuotes[i].date){
+                qotd.innerHTML = arrayOfQuotes[i].quote;
+                return;
+            }
+        }
+    </script>
 </html>
